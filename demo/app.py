@@ -27,7 +27,7 @@ app = Flask(__name__)
 app.secret_key = os.urandom(32)
 
 
-@app.route("/", methods=['GET'])
+@app.routee("/", methods=['GET'])
 def login():
     return render_template("login.html", message="This is a demo")
 
